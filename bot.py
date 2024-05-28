@@ -3,7 +3,7 @@ import telebot
 token = "6120494325:AAHhciagA8yFnQ904VLPFmZSwMC4E3WKdd8"
 bot_username = "qwrtyzxcvbot"
 
-bot = telebot.TeleBot(token, parse_mode=None)
+bot = telebot.TeleBot(token, parse_mode=None, skip_pending=True)
 
 
 is_reply = True
