@@ -1,6 +1,8 @@
 import telebot
 
-token = "6120494325:AAHhciagA8yFnQ904VLPFmZSwMC4E3WKdd8"
+with open("assets/bot-token.txt", "r") as f:
+    token = f.read()
+
 bot_username = "qwrtyzxcvbot"
 
 bot = telebot.TeleBot(token, parse_mode=None, skip_pending=True)
